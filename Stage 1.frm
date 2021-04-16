@@ -1,5 +1,5 @@
 VERSION 5.00
-Begin VB.Form Stage1 
+Begin VB.Form frm_Stage1 
    BackColor       =   &H80000007&
    BorderStyle     =   1  'Fixed Single
    ClientHeight    =   7875
@@ -13,7 +13,7 @@ Begin VB.Form Stage1
    ScaleWidth      =   14520
    StartUpPosition =   2  'CenterScreen
 End
-Attribute VB_Name = "Stage1"
+Attribute VB_Name = "frm_Stage1"
 Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True

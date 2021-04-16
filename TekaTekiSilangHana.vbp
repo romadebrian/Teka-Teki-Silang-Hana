@@ -1,8 +1,9 @@
 Type=Exe
 Form=Stage 1.frm
 Reference=*\G{00020430-0000-0000-C000-000000000046}#2.0#0#..\..\..\..\..\..\Windows\SysWOW64\stdole2.tlb#OLE Automation
-IconForm="Stage1"
-Startup="Stage1"
+Form=frm_SplashScreen.frm
+IconForm="frm_Stage1"
+Startup="frm_SplashScreen"
 HelpFile=""
 Title="TekaTekiSilangHana"
 Command32=""
