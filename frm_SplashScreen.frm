@@ -7,12 +7,13 @@ Begin VB.Form frm_SplashScreen
    ClientLeft      =   45
    ClientTop       =   375
    ClientWidth     =   14370
+   Icon            =   "frm_SplashScreen.frx":0000
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
    ScaleHeight     =   7725
    ScaleWidth      =   14370
-   StartUpPosition =   3  'Windows Default
+   StartUpPosition =   2  'CenterScreen
    Begin VB.Timer Timer1 
       Interval        =   500
       Left            =   3000
@@ -20,9 +21,9 @@ Begin VB.Form frm_SplashScreen
    End
    Begin VB.Image Image1 
       Height          =   4260
-      Left            =   1320
+      Left            =   1680
       Stretch         =   -1  'True
-      Top             =   1440
+      Top             =   1560
       Width           =   11055
    End
 End
@@ -55,7 +56,10 @@ Select Case i
         Image1.Picture = LoadPicture(App.Path & "\Resource\Splash Screen\2.jpg")
     Case 8
         Image1.Picture = LoadPicture(App.Path & "\Resource\Splash Screen\1.jpg")
-    Case Else
+    Case 9
         Image1.Visible = False
+    Case Else
+    frm_SplashScreen.Hide
+    frm_Stage1.Show
 End Select
 End Sub

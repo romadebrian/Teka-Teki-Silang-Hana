@@ -7,30 +7,31 @@ Begin VB.Form frm_Stage1
    ClientHeight    =   7995
    ClientLeft      =   45
    ClientTop       =   375
-   ClientWidth     =   14610
+   ClientWidth     =   14520
+   Icon            =   "Stage 1.frx":0000
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
    ScaleHeight     =   7995
-   ScaleWidth      =   14610
+   ScaleWidth      =   14520
    StartUpPosition =   2  'CenterScreen
-   Begin VB.CommandButton Command2 
+   Begin VB.CommandButton btn_check 
       Caption         =   "CHECK"
       Height          =   495
-      Left            =   10920
+      Left            =   10800
       TabIndex        =   44
       Top             =   6960
       Width           =   735
    End
-   Begin VB.CommandButton Command1 
+   Begin VB.CommandButton btn_hint 
       Caption         =   "HINT"
       Height          =   495
-      Left            =   10920
+      Left            =   10800
       TabIndex        =   43
       Top             =   6360
       Width           =   735
    End
-   Begin VB.TextBox Text38 
+   Begin VB.TextBox txt_42 
       Alignment       =   2  'Center
       BeginProperty Font 
          Name            =   "Arial"
@@ -47,7 +48,7 @@ Begin VB.Form frm_Stage1
       Top             =   4800
       Width           =   495
    End
-   Begin VB.TextBox Text37 
+   Begin VB.TextBox txt_41 
       Alignment       =   2  'Center
       BeginProperty Font 
          Name            =   "Arial"
@@ -64,7 +65,7 @@ Begin VB.Form frm_Stage1
       Top             =   4320
       Width           =   495
    End
-   Begin VB.TextBox Text36 
+   Begin VB.TextBox txt_40 
       Alignment       =   2  'Center
       BeginProperty Font 
          Name            =   "Arial"
@@ -81,7 +82,7 @@ Begin VB.Form frm_Stage1
       Top             =   3840
       Width           =   495
    End
-   Begin VB.TextBox Text35 
+   Begin VB.TextBox txt_34 
       Alignment       =   2  'Center
       BeginProperty Font 
          Name            =   "Arial"
@@ -98,7 +99,7 @@ Begin VB.Form frm_Stage1
       Top             =   3360
       Width           =   495
    End
-   Begin VB.TextBox Text34 
+   Begin VB.TextBox txt_32 
       Alignment       =   2  'Center
       BeginProperty Font 
          Name            =   "Arial"
@@ -115,7 +116,7 @@ Begin VB.Form frm_Stage1
       Top             =   3360
       Width           =   495
    End
-   Begin VB.TextBox Text33 
+   Begin VB.TextBox txt_33 
       Alignment       =   2  'Center
       BeginProperty Font 
          Name            =   "Arial"
@@ -132,7 +133,7 @@ Begin VB.Form frm_Stage1
       Top             =   3360
       Width           =   495
    End
-   Begin VB.TextBox Text32 
+   Begin VB.TextBox txt_25 
       Alignment       =   2  'Center
       BeginProperty Font 
          Name            =   "Arial"
@@ -149,7 +150,7 @@ Begin VB.Form frm_Stage1
       Top             =   2880
       Width           =   495
    End
-   Begin VB.TextBox Text31 
+   Begin VB.TextBox txt_21 
       Alignment       =   2  'Center
       BeginProperty Font 
          Name            =   "Arial"
@@ -166,7 +167,7 @@ Begin VB.Form frm_Stage1
       Top             =   2400
       Width           =   495
    End
-   Begin VB.TextBox Text30 
+   Begin VB.TextBox txt_14 
       Alignment       =   2  'Center
       BeginProperty Font 
          Name            =   "Arial"
@@ -183,7 +184,7 @@ Begin VB.Form frm_Stage1
       Top             =   1920
       Width           =   495
    End
-   Begin VB.TextBox Text29 
+   Begin VB.TextBox txt_30 
       Alignment       =   2  'Center
       BeginProperty Font 
          Name            =   "Arial"
@@ -200,7 +201,7 @@ Begin VB.Form frm_Stage1
       Top             =   2880
       Width           =   495
    End
-   Begin VB.TextBox Text28 
+   Begin VB.TextBox txt_29 
       Alignment       =   2  'Center
       BeginProperty Font 
          Name            =   "Arial"
@@ -217,7 +218,7 @@ Begin VB.Form frm_Stage1
       Top             =   2880
       Width           =   495
    End
-   Begin VB.TextBox Text27 
+   Begin VB.TextBox txt_28 
       Alignment       =   2  'Center
       BeginProperty Font 
          Name            =   "Arial"
@@ -234,7 +235,7 @@ Begin VB.Form frm_Stage1
       Top             =   2880
       Width           =   495
    End
-   Begin VB.TextBox Text26 
+   Begin VB.TextBox txt_27 
       Alignment       =   2  'Center
       BeginProperty Font 
          Name            =   "Arial"
@@ -251,7 +252,7 @@ Begin VB.Form frm_Stage1
       Top             =   2880
       Width           =   495
    End
-   Begin VB.TextBox Text25 
+   Begin VB.TextBox txt_35 
       Alignment       =   2  'Center
       BeginProperty Font 
          Name            =   "Arial"
@@ -268,7 +269,7 @@ Begin VB.Form frm_Stage1
       Top             =   3360
       Width           =   495
    End
-   Begin VB.TextBox Text24 
+   Begin VB.TextBox txt_26 
       Alignment       =   2  'Center
       BeginProperty Font 
          Name            =   "Arial"
@@ -285,7 +286,7 @@ Begin VB.Form frm_Stage1
       Top             =   2880
       Width           =   495
    End
-   Begin VB.TextBox Text23 
+   Begin VB.TextBox txt_22 
       Alignment       =   2  'Center
       BeginProperty Font 
          Name            =   "Arial"
@@ -302,7 +303,7 @@ Begin VB.Form frm_Stage1
       Top             =   2400
       Width           =   495
    End
-   Begin VB.TextBox Text22 
+   Begin VB.TextBox txt_15 
       Alignment       =   2  'Center
       BeginProperty Font 
          Name            =   "Arial"
@@ -319,7 +320,7 @@ Begin VB.Form frm_Stage1
       Top             =   1920
       Width           =   495
    End
-   Begin VB.TextBox Text21 
+   Begin VB.TextBox txt_10 
       BeginProperty Font 
          Name            =   "Arial"
          Size            =   20.25
@@ -335,7 +336,7 @@ Begin VB.Form frm_Stage1
       Top             =   1440
       Width           =   495
    End
-   Begin VB.TextBox Text20 
+   Begin VB.TextBox txt_9 
       BeginProperty Font 
          Name            =   "Arial"
          Size            =   20.25
@@ -351,7 +352,7 @@ Begin VB.Form frm_Stage1
       Top             =   1440
       Width           =   495
    End
-   Begin VB.TextBox Text19 
+   Begin VB.TextBox txt_8 
       BeginProperty Font 
          Name            =   "Arial"
          Size            =   20.25
@@ -367,7 +368,7 @@ Begin VB.Form frm_Stage1
       Top             =   1440
       Width           =   495
    End
-   Begin VB.TextBox Text18 
+   Begin VB.TextBox txt_7 
       BeginProperty Font 
          Name            =   "Arial"
          Size            =   20.25
@@ -383,7 +384,7 @@ Begin VB.Form frm_Stage1
       Top             =   1440
       Width           =   495
    End
-   Begin VB.TextBox Text17 
+   Begin VB.TextBox txt_6 
       BeginProperty Font 
          Name            =   "Arial"
          Size            =   21.75
@@ -399,7 +400,7 @@ Begin VB.Form frm_Stage1
       Top             =   1440
       Width           =   495
    End
-   Begin VB.TextBox Text16 
+   Begin VB.TextBox txt_5 
       Alignment       =   2  'Center
       BeginProperty Font 
          Name            =   "Arial"
@@ -416,7 +417,7 @@ Begin VB.Form frm_Stage1
       Top             =   1440
       Width           =   495
    End
-   Begin VB.TextBox Text15 
+   Begin VB.TextBox txt_13 
       Alignment       =   2  'Center
       BeginProperty Font 
          Name            =   "Arial"
@@ -433,7 +434,7 @@ Begin VB.Form frm_Stage1
       Top             =   1920
       Width           =   495
    End
-   Begin VB.TextBox Text14 
+   Begin VB.TextBox txt_36 
       Alignment       =   2  'Center
       BeginProperty Font 
          Name            =   "Arial"
@@ -450,7 +451,7 @@ Begin VB.Form frm_Stage1
       Top             =   3840
       Width           =   495
    End
-   Begin VB.TextBox Text13 
+   Begin VB.TextBox txt_39 
       Alignment       =   2  'Center
       BeginProperty Font 
          Name            =   "Arial"
@@ -467,7 +468,7 @@ Begin VB.Form frm_Stage1
       Top             =   3840
       Width           =   495
    End
-   Begin VB.TextBox Text12 
+   Begin VB.TextBox txt_37 
       Alignment       =   2  'Center
       BeginProperty Font 
          Name            =   "Arial"
@@ -484,7 +485,7 @@ Begin VB.Form frm_Stage1
       Top             =   3840
       Width           =   495
    End
-   Begin VB.TextBox Text11 
+   Begin VB.TextBox txt_20 
       Alignment       =   2  'Center
       BeginProperty Font 
          Name            =   "Arial"
@@ -501,7 +502,7 @@ Begin VB.Form frm_Stage1
       Top             =   2400
       Width           =   495
    End
-   Begin VB.TextBox Text10 
+   Begin VB.TextBox txt_19 
       Alignment       =   2  'Center
       BeginProperty Font 
          Name            =   "Arial"
@@ -518,7 +519,7 @@ Begin VB.Form frm_Stage1
       Top             =   2400
       Width           =   495
    End
-   Begin VB.TextBox Text9 
+   Begin VB.TextBox txt_17 
       Alignment       =   2  'Center
       BeginProperty Font 
          Name            =   "Arial"
@@ -535,7 +536,7 @@ Begin VB.Form frm_Stage1
       Top             =   2400
       Width           =   495
    End
-   Begin VB.TextBox Text8 
+   Begin VB.TextBox txt_38 
       Alignment       =   2  'Center
       BeginProperty Font 
          Name            =   "Arial"
@@ -552,7 +553,7 @@ Begin VB.Form frm_Stage1
       Top             =   3840
       Width           =   495
    End
-   Begin VB.TextBox Text7 
+   Begin VB.TextBox txt_31 
       Alignment       =   2  'Center
       BeginProperty Font 
          Name            =   "Arial"
@@ -569,7 +570,7 @@ Begin VB.Form frm_Stage1
       Top             =   3360
       Width           =   495
    End
-   Begin VB.TextBox Text6 
+   Begin VB.TextBox txt_24 
       Alignment       =   2  'Center
       BeginProperty Font 
          Name            =   "Arial"
@@ -586,7 +587,7 @@ Begin VB.Form frm_Stage1
       Top             =   2880
       Width           =   495
    End
-   Begin VB.TextBox Text5 
+   Begin VB.TextBox txt_18 
       Alignment       =   2  'Center
       BeginProperty Font 
          Name            =   "Arial"
@@ -603,7 +604,7 @@ Begin VB.Form frm_Stage1
       Top             =   2400
       Width           =   495
    End
-   Begin VB.TextBox Text4 
+   Begin VB.TextBox txt_12 
       Alignment       =   2  'Center
       BeginProperty Font 
          Name            =   "Arial"
@@ -620,7 +621,7 @@ Begin VB.Form frm_Stage1
       Top             =   1920
       Width           =   495
    End
-   Begin VB.TextBox Text3 
+   Begin VB.TextBox txt_23 
       Alignment       =   2  'Center
       BeginProperty Font 
          Name            =   "Arial"
@@ -637,7 +638,7 @@ Begin VB.Form frm_Stage1
       Top             =   2880
       Width           =   495
    End
-   Begin VB.TextBox Text2 
+   Begin VB.TextBox txt_16 
       Alignment       =   2  'Center
       BeginProperty Font 
          Name            =   "Arial"
@@ -654,7 +655,7 @@ Begin VB.Form frm_Stage1
       Top             =   2400
       Width           =   495
    End
-   Begin VB.TextBox Text1 
+   Begin VB.TextBox txt_11 
       Alignment       =   2  'Center
       BeginProperty Font 
          Name            =   "Arial"
@@ -747,9 +748,35 @@ Begin VB.Form frm_Stage1
       Top             =   1440
       Width           =   495
    End
-   Begin VB.Label Label1 
+   Begin VB.Image Image3 
+      Height          =   1695
+      Left            =   10800
+      Picture         =   "Stage 1.frx":0CCA
+      Stretch         =   -1  'True
+      Top             =   840
+      Width           =   2415
+   End
+   Begin VB.Label lbl_hint2 
       Alignment       =   2  'Center
-      Caption         =   "Label1"
+      BackColor       =   &H80000005&
+      BeginProperty Font 
+         Name            =   "Comic Sans MS"
+         Size            =   12
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   615
+      Left            =   3240
+      TabIndex        =   46
+      Top             =   6840
+      Width           =   6975
+   End
+   Begin VB.Label lbl_hint1 
+      Alignment       =   2  'Center
+      BackColor       =   &H00FFFFFF&
       BeginProperty Font 
          Name            =   "Comic Sans MS"
          Size            =   12
@@ -760,26 +787,43 @@ Begin VB.Form frm_Stage1
          Strikethrough   =   0   'False
       EndProperty
       ForeColor       =   &H000000FF&
-      Height          =   975
-      Left            =   3360
+      Height          =   615
+      Left            =   3240
       TabIndex        =   45
-      Top             =   6480
+      Top             =   6240
       Width           =   6975
    End
    Begin VB.Shape Shape1 
+      BackColor       =   &H00FFFFFF&
       BackStyle       =   1  'Opaque
       Height          =   1575
       Left            =   2880
-      Top             =   6000
+      Top             =   6080
       Width           =   8895
    End
    Begin VB.Image Image1 
       Height          =   7935
       Left            =   0
-      Picture         =   "Stage 1.frx":0000
+      Picture         =   "Stage 1.frx":A4D0
       Stretch         =   -1  'True
       Top             =   0
       Width           =   14535
+   End
+   Begin VB.Image Image2 
+      Height          =   4440
+      Left            =   360
+      Picture         =   "Stage 1.frx":19E9D
+      Stretch         =   -1  'True
+      Top             =   3240
+      Width           =   3570
+   End
+   Begin VB.Image Image4 
+      Height          =   3015
+      Left            =   9600
+      Picture         =   "Stage 1.frx":C2371
+      Stretch         =   -1  'True
+      Top             =   3240
+      Width           =   4575
    End
 End
 Attribute VB_Name = "frm_Stage1"
@@ -791,7 +835,152 @@ Private Sub Form_Unload(Cancel As Integer)
 End
 End Sub
 
+Private Sub txt_1_GotFocus()
+lbl_hint1.Caption = "Berhemat"
+lbl_hint2.Caption = "Hewan yang hidup di air"
+End Sub
+
 Private Sub txt_1_KeyPress(KeyAscii As Integer)
 KeyAscii = Asc(UCase(Chr(KeyAscii)))
 txt_focus.SetFocus
+End Sub
+
+Private Sub txt_1_LostFocus()
+lbl_hint1.Caption = ""
+lbl_hint2.Caption = ""
+End Sub
+
+Private Sub txt_2_GotFocus()
+lbl_hint1.Caption = "Berhemat"
+lbl_hint2.Caption = ""
+End Sub
+
+Private Sub txt_2_KeyPress(KeyAscii As Integer)
+KeyAscii = Asc(UCase(Chr(KeyAscii)))
+txt_focus.SetFocus
+End Sub
+
+Private Sub txt_2_LostFocus()
+lbl_hint1.Caption = ""
+lbl_hint2.Caption = ""
+End Sub
+
+Private Sub txt_3_GotFocus()
+lbl_hint1.Caption = "Berhemat"
+lbl_hint2.Caption = ""
+End Sub
+
+Private Sub txt_3_KeyPress(KeyAscii As Integer)
+KeyAscii = Asc(UCase(Chr(KeyAscii)))
+txt_focus.SetFocus
+End Sub
+
+Private Sub txt_3_LostFocus()
+lbl_hint1.Caption = ""
+lbl_hint2.Caption = ""
+End Sub
+
+Private Sub txt_4_GotFocus()
+lbl_hint1.Caption = "Berhemat"
+lbl_hint2.Caption = "Memukul pipi orang lain"
+End Sub
+
+Private Sub txt_4_KeyPress(KeyAscii As Integer)
+KeyAscii = Asc(UCase(Chr(KeyAscii)))
+txt_focus.SetFocus
+End Sub
+
+Private Sub txt_4_LostFocus()
+lbl_hint1.Caption = ""
+lbl_hint2.Caption = ""
+End Sub
+
+Private Sub txt_5_GotFocus()
+lbl_hint1.Caption = "Hewan yang meng guk guk"
+lbl_hint2.Caption = "Yang biasa turun ketika hujan"
+End Sub
+
+Private Sub txt_5_KeyPress(KeyAscii As Integer)
+KeyAscii = Asc(UCase(Chr(KeyAscii)))
+txt_focus.SetFocus
+End Sub
+
+Private Sub txt_5_LostFocus()
+lbl_hint1.Caption = ""
+lbl_hint2.Caption = ""
+End Sub
+
+Private Sub txt_6_GotFocus()
+lbl_hint1.Caption = "Hewan yang meng guk guk"
+lbl_hint2.Caption = ""
+End Sub
+
+Private Sub txt_6_KeyPress(KeyAscii As Integer)
+KeyAscii = Asc(UCase(Chr(KeyAscii)))
+txt_focus.SetFocus
+End Sub
+
+Private Sub txt_6_LostFocus()
+lbl_hint1.Caption = ""
+lbl_hint2.Caption = ""
+End Sub
+
+Private Sub txt_7_GotFocus()
+lbl_hint1.Caption = "Hewan yang meng guk guk"
+lbl_hint2.Caption = "Yang biasa dimiliki dukun"
+End Sub
+
+Private Sub txt_7_KeyPress(KeyAscii As Integer)
+KeyAscii = Asc(UCase(Chr(KeyAscii)))
+txt_focus.SetFocus
+End Sub
+
+Private Sub txt_7_LostFocus()
+lbl_hint1.Caption = ""
+lbl_hint2.Caption = ""
+End Sub
+
+Private Sub txt_8_GotFocus()
+lbl_hint1.Caption = "Hewan yang meng guk guk"
+lbl_hint2.Caption = ""
+End Sub
+
+Private Sub txt_8_KeyPress(KeyAscii As Integer)
+KeyAscii = Asc(UCase(Chr(KeyAscii)))
+txt_focus.SetFocus
+End Sub
+
+Private Sub txt_8_LostFocus()
+lbl_hint1.Caption = ""
+lbl_hint2.Caption = ""
+End Sub
+
+Private Sub txt_9_GotFocus()
+lbl_hint1.Caption = "Hewan yang meng guk guk"
+lbl_hint2.Caption = "pineapple (indonesia)"
+End Sub
+
+Private Sub txt_9_KeyPress(KeyAscii As Integer)
+KeyAscii = Asc(UCase(Chr(KeyAscii)))
+txt_focus.SetFocus
+End Sub
+
+Private Sub txt_9_LostFocus()
+lbl_hint1.Caption = ""
+lbl_hint2.Caption = ""
+End Sub
+
+Private Sub txt_10_GotFocus()
+lbl_hint1.Caption = "Hewan yang meng guk guk"
+lbl_hint2.Caption = ""
+End Sub
+
+Private Sub txt_10_KeyPress(KeyAscii As Integer)
+KeyAscii = Asc(UCase(Chr(KeyAscii)))
+txt_focus.SetFocus
+End Sub
+
+Private Sub txt_10_LostFocus()
+lbl_hint1.Caption = ""
+lbl_hint2.Caption = ""
 End Sub
