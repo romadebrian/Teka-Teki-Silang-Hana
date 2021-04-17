@@ -16,17 +16,39 @@ Begin VB.Form frm_Stage1
    ScaleWidth      =   14520
    StartUpPosition =   2  'CenterScreen
    Begin VB.CommandButton btn_check 
+      BackColor       =   &H8000000D&
       Caption         =   "CHECK"
+      BeginProperty Font 
+         Name            =   "Corporate Logo Rounded"
+         Size            =   9
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
       Height          =   495
       Left            =   10800
+      Style           =   1  'Graphical
       TabIndex        =   43
       Top             =   6960
       Width           =   735
    End
    Begin VB.CommandButton btn_hint 
+      BackColor       =   &H8000000D&
       Caption         =   "HINT"
+      BeginProperty Font 
+         Name            =   "Corporate Logo Rounded"
+         Size            =   9
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
       Height          =   495
       Left            =   10800
+      Style           =   1  'Graphical
       TabIndex        =   42
       Top             =   6360
       Width           =   735
@@ -821,6 +843,7 @@ Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Private Sub btn_check_Click()
 cek_jawaban
+'test_ceck
 End Sub
 
 Private Sub Form_Unload(Cancel As Integer)
