@@ -819,6 +819,10 @@ Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
+Private Sub btn_check_Click()
+cek_jawaban
+End Sub
+
 Private Sub Form_Unload(Cancel As Integer)
 End
 End Sub
@@ -1064,7 +1068,7 @@ lbl_hint2.Caption = ""
 End Sub
 
 Private Sub txt_17_GotFocus()
-lbl_hint1.Caption = "Bulan setelah ferbruari"
+lbl_hint1.Caption = "Bulan setelah bulan februari"
 lbl_hint2.Caption = "Memukul pipi orang lain"
 End Sub
 
@@ -1125,7 +1129,7 @@ End Sub
 
 Private Sub txt_21_GotFocus()
 lbl_hint1.Caption = ""
-lbl_hint2.Caption = "pineaplle (indonesia)"
+lbl_hint2.Caption = "pineapple (indonesia)"
 End Sub
 
 Private Sub txt_21_KeyPress(KeyAscii As Integer)
