@@ -1,5 +1,12 @@
-Attribute VB_Name = "Module1"
-Sub cek_jawaban()
+Attribute VB_Name = "Module_Cek_Jawaban"
+Sub SelectAllText(tb As TextBox)
+
+tb.SelStart = 0
+tb.SelLength = Len(tb.Text)
+
+End Sub
+
+Sub Cek_Jawaban_Stage1()
 
 If frm_Stage1.txt_1.Text = "" Then
     MsgBox "Jawaban anda kosong"

@@ -758,6 +758,28 @@ Begin VB.Form frm_Stage1
       Top             =   1440
       Width           =   495
    End
+   Begin VB.Label lbl_val_hint 
+      Alignment       =   2  'Center
+      Appearance      =   0  'Flat
+      BackColor       =   &H0080FF80&
+      BackStyle       =   0  'Transparent
+      Caption         =   "20"
+      BeginProperty Font 
+         Name            =   "Consolas"
+         Size            =   48
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H0000FFFF&
+      Height          =   1215
+      Left            =   12120
+      TabIndex        =   46
+      Top             =   6120
+      Width           =   1215
+   End
    Begin VB.Image Image3 
       Height          =   1695
       Left            =   10800
@@ -842,8 +864,13 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Private Sub btn_check_Click()
-cek_jawaban
+Cek_Jawaban_Stage1
 'test_ceck
+End Sub
+
+Private Sub btn_hint_Click()
+'MsgBox "Oh tuhan, berikanlah hamba petunjuk"
+Hint_Stage1
 End Sub
 
 Private Sub Form_Unload(Cancel As Integer)
