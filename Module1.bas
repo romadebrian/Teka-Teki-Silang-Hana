@@ -291,6 +291,7 @@ ElseIf Not frm_Stage1.txt_35.Text = "S" Then
 ElseIf frm_Stage1.txt_36.Text = "" Then
     MsgBox "Jawaban anda kosong"
     frm_Stage1.txt_36.SetFocus
+    
 ElseIf Not frm_Stage1.txt_36.Text = "A" Then
     MsgBox "Ada jawaban yang salah"
     frm_Stage1.txt_36.SetFocus

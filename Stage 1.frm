@@ -763,7 +763,7 @@ Begin VB.Form frm_Stage1
       Appearance      =   0  'Flat
       BackColor       =   &H0080FF80&
       BackStyle       =   0  'Transparent
-      Caption         =   "20"
+      Caption         =   "10"
       BeginProperty Font 
          Name            =   "Consolas"
          Size            =   48
@@ -783,7 +783,7 @@ Begin VB.Form frm_Stage1
    Begin VB.Image Image3 
       Height          =   1695
       Left            =   10800
-      Picture         =   "Stage 1.frx":0CCA
+      Picture         =   "Stage 1.frx":C84A
       Stretch         =   -1  'True
       Top             =   840
       Width           =   2415
@@ -836,7 +836,7 @@ Begin VB.Form frm_Stage1
    Begin VB.Image Image1 
       Height          =   7935
       Left            =   0
-      Picture         =   "Stage 1.frx":A4D0
+      Picture         =   "Stage 1.frx":16050
       Stretch         =   -1  'True
       Top             =   0
       Width           =   14535
@@ -844,7 +844,7 @@ Begin VB.Form frm_Stage1
    Begin VB.Image Image2 
       Height          =   4440
       Left            =   360
-      Picture         =   "Stage 1.frx":19E9D
+      Picture         =   "Stage 1.frx":25A1D
       Stretch         =   -1  'True
       Top             =   3240
       Width           =   3570
@@ -852,7 +852,7 @@ Begin VB.Form frm_Stage1
    Begin VB.Image Image4 
       Height          =   3015
       Left            =   9600
-      Picture         =   "Stage 1.frx":C2371
+      Picture         =   "Stage 1.frx":CDEF1
       Stretch         =   -1  'True
       Top             =   3240
       Width           =   4575
@@ -880,6 +880,8 @@ End Sub
 Private Sub txt_1_GotFocus()
 lbl_hint1.Caption = "Berhemat"
 lbl_hint2.Caption = "Hewan yang hidup di air"
+
+'if hint_mode = on then
 End Sub
 
 Private Sub txt_1_KeyPress(KeyAscii As Integer)
