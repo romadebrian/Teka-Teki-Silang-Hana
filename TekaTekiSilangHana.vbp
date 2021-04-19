@@ -4,6 +4,7 @@ Reference=*\G{00020430-0000-0000-C000-000000000046}#2.0#0#..\..\..\..\..\..\Wind
 Form=frm_SplashScreen.frm
 Module=Module_Cek_Jawaban; Module1.bas
 Module=Modul_hint; Modul_Hint.bas
+Form=Stage 2.frm
 IconForm="frm_SplashScreen"
 Startup="frm_Stage1"
 HelpFile=""

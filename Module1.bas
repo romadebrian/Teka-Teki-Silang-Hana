@@ -338,7 +338,8 @@ ElseIf Not frm_Stage1.txt_41.Text = "N" Then
     
 Else
     MsgBox "Selamat anda berhasil menyelesaikan puzle ini"
-    MsgBox "Stage selanjutnya sedang dalam tahapn pembuatan"
+    frm_Stage2.Show
+    frm_Stage1.Hide
 End If
 
 End Sub
