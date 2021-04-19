@@ -1,16 +1,18 @@
 VERSION 5.00
+Object = "{6BF52A50-394A-11D3-B153-00C04F79FAA6}#1.0#0"; "wmp.dll"
 Begin VB.Form frm_Stage2 
    BackColor       =   &H8000000D&
    BorderStyle     =   1  'Fixed Single
    Caption         =   "TTS 2"
-   ClientHeight    =   7995
+   ClientHeight    =   7935
    ClientLeft      =   150
    ClientTop       =   8790
    ClientWidth     =   14520
+   Icon            =   "Stage 2.frx":0000
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   7827.566
+   ScaleHeight     =   7768.822
    ScaleMode       =   0  'User
    ScaleWidth      =   14520
    StartUpPosition =   2  'CenterScreen
@@ -1914,6 +1916,38 @@ Begin VB.Form frm_Stage2
       Top             =   6960
       Width           =   735
    End
+   Begin WMPLibCtl.WindowsMediaPlayer WMP 
+      Height          =   855
+      Left            =   2400
+      TabIndex        =   109
+      Top             =   8160
+      Width           =   11535
+      URL             =   ""
+      rate            =   1
+      balance         =   0
+      currentPosition =   0
+      defaultFrame    =   ""
+      playCount       =   1
+      autoStart       =   -1  'True
+      currentMarker   =   0
+      invokeURLs      =   -1  'True
+      baseURL         =   ""
+      volume          =   50
+      mute            =   0   'False
+      uiMode          =   "full"
+      stretchToFit    =   0   'False
+      windowlessVideo =   0   'False
+      enabled         =   -1  'True
+      enableContextMenu=   -1  'True
+      fullScreen      =   0   'False
+      SAMIStyle       =   ""
+      SAMILang        =   ""
+      SAMIFilename    =   ""
+      captioningID    =   ""
+      enableErrorDialogs=   0   'False
+      _cx             =   20346
+      _cy             =   1508
+   End
    Begin VB.Shape Shape1 
       BackColor       =   &H00FFFFFF&
       BackStyle       =   1  'Opaque
@@ -1984,7 +2018,7 @@ Begin VB.Form frm_Stage2
    Begin VB.Image Image1 
       Height          =   7935
       Left            =   0
-      Picture         =   "Stage 2.frx":0000
+      Picture         =   "Stage 2.frx":C84A
       Stretch         =   -1  'True
       Top             =   0
       Width           =   14535
@@ -1995,3 +2029,12 @@ Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
+Private Sub Form_Load()
+WMP.settings.volume = 100
+WMP.URL = (App.Path & "\Resource\Wistful Harp - Andrew Huang.mp3")
+WMP.settings.setMode "loop", True
+End Sub
+
+Private Sub Form_Unload(Cancel As Integer)
+End
+End Sub

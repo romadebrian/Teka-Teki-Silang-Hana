@@ -1,4 +1,6 @@
 Attribute VB_Name = "Module_Cek_Jawaban"
+Private Declare Function sndPlaySound Lib "winmm.dll" Alias "sndPlaySoundA" (ByVal lpszSoundName As String, ByVal uFlags As Long) As Long
+
 Sub SelectAllText(tb As TextBox)
 
 tb.SelStart = 0

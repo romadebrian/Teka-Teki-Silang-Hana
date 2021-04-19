@@ -1,10 +1,11 @@
 VERSION 5.00
+Object = "{6BF52A50-394A-11D3-B153-00C04F79FAA6}#1.0#0"; "wmp.dll"
 Begin VB.Form frm_Stage1 
    Appearance      =   0  'Flat
    BackColor       =   &H8000000D&
    BorderStyle     =   1  'Fixed Single
    Caption         =   "TTS 1"
-   ClientHeight    =   7995
+   ClientHeight    =   7965
    ClientLeft      =   45
    ClientTop       =   375
    ClientWidth     =   14520
@@ -12,7 +13,7 @@ Begin VB.Form frm_Stage1
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   7995
+   ScaleHeight     =   7965
    ScaleWidth      =   14520
    StartUpPosition =   2  'CenterScreen
    Begin VB.CommandButton btn_check 
@@ -758,12 +759,44 @@ Begin VB.Form frm_Stage1
       Top             =   1440
       Width           =   495
    End
+   Begin WMPLibCtl.WindowsMediaPlayer WMP 
+      Height          =   855
+      Left            =   2160
+      TabIndex        =   47
+      Top             =   8160
+      Width           =   11175
+      URL             =   ""
+      rate            =   1
+      balance         =   0
+      currentPosition =   0
+      defaultFrame    =   ""
+      playCount       =   1
+      autoStart       =   -1  'True
+      currentMarker   =   0
+      invokeURLs      =   -1  'True
+      baseURL         =   ""
+      volume          =   50
+      mute            =   0   'False
+      uiMode          =   "full"
+      stretchToFit    =   0   'False
+      windowlessVideo =   0   'False
+      enabled         =   -1  'True
+      enableContextMenu=   -1  'True
+      fullScreen      =   0   'False
+      SAMIStyle       =   ""
+      SAMILang        =   ""
+      SAMIFilename    =   ""
+      captioningID    =   ""
+      enableErrorDialogs=   0   'False
+      _cx             =   19711
+      _cy             =   1508
+   End
    Begin VB.Label lbl_val_hint 
       Alignment       =   2  'Center
       Appearance      =   0  'Flat
       BackColor       =   &H0080FF80&
       BackStyle       =   0  'Transparent
-      Caption         =   "10"
+      Caption         =   "50"
       BeginProperty Font 
          Name            =   "Consolas"
          Size            =   48
@@ -871,6 +904,12 @@ End Sub
 Private Sub btn_hint_Click()
 'MsgBox "Oh tuhan, berikanlah hamba petunjuk"
 Hint_Stage1
+End Sub
+
+Private Sub Form_Load()
+WMP.settings.volume = 100
+WMP.URL = (App.Path & "\Resource\Wistful Harp - Andrew Huang.mp3")
+WMP.settings.setMode "loop", True
 End Sub
 
 Private Sub Form_Unload(Cancel As Integer)
