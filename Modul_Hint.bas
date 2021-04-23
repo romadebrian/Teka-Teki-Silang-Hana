@@ -348,3 +348,25 @@ MsgBox "Hint anda sudah habis"
 End If
 
 End Sub
+
+Sub Hint_Stage2()
+With frm_Stage2
+
+Select Case Index
+    Case 0
+        If .txt_jwb(0) = "" Then
+            .txt_jwb(0) = "A"
+            .txt_jwb(0).SetFocus
+            
+        ElseIf Not frm_Stage1.txt_1.Text = "A" Then
+            .txt_jwb(0) = "A"
+            .txt_jwb(0).SetFocus
+        End If
+        
+    Case 1
+        MsgBox "text2"
+End Select
+
+End With
+End Sub
+

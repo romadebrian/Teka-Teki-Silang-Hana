@@ -1,7 +1,9 @@
 Attribute VB_Name = "Module_Cek_Jawaban"
 Private Declare Function sndPlaySound Lib "winmm.dll" Alias "sndPlaySoundA" (ByVal lpszSoundName As String, ByVal uFlags As Long) As Long
+Dim jwb_stg2 As String
+Dim i As Integer
 
-Sub SelectAllText(tb As TextBox)
+Sub SelectAllText(tb As TextBox) 'codingan ini tidak di pakai dan hanya prototipe system block text
 
 tb.SelStart = 0
 tb.SelLength = Len(tb.Text)
@@ -348,6 +350,41 @@ Else
 End If
 
 End Sub
+
+Sub Cek_Jawaban_Stage2()
+With frm_Stage2
+For i = 0 To 2 '101
+
+Jwb_Stage2
+
+If .txt_jwb(i).Text = "" Then
+    MsgBox "Jawaban anda kosong"
+    .txt_jwb(i).SetFocus
+    i = 2
+    
+ElseIf Not .txt_jwb(i).Text = jwb_stg2 Then
+    MsgBox "Ada jawaban yang salah"
+    .txt_jwb(i).SetFocus
+    i = 2
+    
+    frm_Stage2.lbl_val_hint.Caption = jwb_stg2
+End If
+
+Next
+End With
+End Sub
+
+Sub Jwb_Stage2()
+Select Case i
+    Case 0
+        jwb_stg2 = "A"
+    Case 1
+        jwb_stg2 = "N"
+    Case 2
+        jwb_stg2 = "A"
+End Select
+End Sub
+
 
 Sub test_ceck()
 If frm_Stage1.txt_1.Text = "" Then

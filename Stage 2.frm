@@ -12,7 +12,7 @@ Begin VB.Form frm_Stage2
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   7768.822
+   ScaleHeight     =   7768.821
    ScaleMode       =   0  'User
    ScaleWidth      =   14520
    StartUpPosition =   2  'CenterScreen
@@ -1948,14 +1948,6 @@ Begin VB.Form frm_Stage2
       _cx             =   20346
       _cy             =   1508
    End
-   Begin VB.Shape Shape1 
-      BackColor       =   &H00FFFFFF&
-      BackStyle       =   1  'Opaque
-      Height          =   1575
-      Left            =   2880
-      Top             =   6080
-      Width           =   8895
-   End
    Begin VB.Label lbl_hint1 
       Alignment       =   2  'Center
       BackColor       =   &H00FFFFFF&
@@ -2015,10 +2007,42 @@ Begin VB.Form frm_Stage2
       Top             =   6120
       Width           =   1215
    End
+   Begin VB.Shape Shape1 
+      BackColor       =   &H00FFFFFF&
+      BackStyle       =   1  'Opaque
+      Height          =   1575
+      Left            =   2880
+      Top             =   6080
+      Width           =   8895
+   End
+   Begin VB.Image Image4 
+      Height          =   2445
+      Left            =   12120
+      Picture         =   "Stage 2.frx":C84A
+      Stretch         =   -1  'True
+      Top             =   3720
+      Width           =   1935
+   End
+   Begin VB.Image Image2 
+      Height          =   3615
+      Left            =   480
+      Picture         =   "Stage 2.frx":9E5CA
+      Stretch         =   -1  'True
+      Top             =   4080
+      Width           =   2775
+   End
+   Begin VB.Image Image3 
+      Height          =   1215
+      Left            =   8640
+      Picture         =   "Stage 2.frx":117E2A
+      Stretch         =   -1  'True
+      Top             =   1800
+      Width           =   1215
+   End
    Begin VB.Image Image1 
       Height          =   7935
       Left            =   0
-      Picture         =   "Stage 2.frx":C84A
+      Picture         =   "Stage 2.frx":1536DA
       Stretch         =   -1  'True
       Top             =   0
       Width           =   14535
@@ -2029,7 +2053,32 @@ Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
+Dim Val_Hint_Stage2 As Integer
+Dim Hint_Mode As Boolean
+
+Private Sub btn_check_Click()
+Cek_Jawaban_Stage2
+End Sub
+
+Private Sub btn_hint_Click()
+If Not lbl_val_hint.Caption = 0 Then
+    Val_Hint_Stage2 = lbl_val_hint.Caption
+    Val_Hint_Stage2 = Val_Hint_Stage2 - 1
+    lbl_val_hint.Caption = Val_Hint_Stage2
+    Hint_Mode = True
+    frm_Stage2.BackColor = &H0&
+    MsgBox "Pilih kolom yang mau diberikan hint"
+Else
+    MsgBox "Hint anda sudah habis"
+End If
+End Sub
+
 Private Sub Form_Load()
+
+Hint_Mode = False
+
+frm_Stage2.BackColor = &H8000000D
+
 WMP.settings.volume = 100
 WMP.URL = (App.Path & "\Resource\Wistful Harp - Andrew Huang.mp3")
 WMP.settings.setMode "loop", True
@@ -2037,4 +2086,30 @@ End Sub
 
 Private Sub Form_Unload(Cancel As Integer)
 End
+End Sub
+
+
+Private Sub txt_jwb_GotFocus(Index As Integer)
+
+If Hint_Mode = True Then
+    Hint_Stage2
+Else
+
+Select Case Index
+    Case 0
+        lbl_hint1.Caption = "Penerus orang tua adalah"
+        lbl_hint2.Caption = ""
+End Select
+End If
+
+End Sub
+
+Private Sub txt_jwb_KeyPress(Index As Integer, KeyAscii As Integer)
+KeyAscii = Asc(UCase(Chr(KeyAscii)))
+txt_focus.SetFocus
+End Sub
+
+Private Sub txt_jwb_LostFocus(Index As Integer)
+lbl_hint1.Caption = ""
+lbl_hint2.Caption = ""
 End Sub
