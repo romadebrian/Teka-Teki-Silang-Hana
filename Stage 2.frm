@@ -1979,7 +1979,7 @@ Begin VB.Form frm_Stage2
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Height          =   615
+      Height          =   735
       Left            =   3240
       TabIndex        =   5
       Top             =   6840
@@ -2099,6 +2099,312 @@ Select Case Index
     Case 0
         lbl_hint1.Caption = "Penerus orang tua adalah"
         lbl_hint2.Caption = ""
+    Case 1
+        lbl_hint1.Caption = "Penerus orang tua adalah"
+        lbl_hint2.Caption = "Makanan pokok orang indonesia"
+    Case 2
+        lbl_hint1.Caption = "Penerus orang tua adalah"
+        lbl_hint2.Caption = ""
+    Case 3
+        lbl_hint1.Caption = "Penerus orang tua adalah"
+        lbl_hint2.Caption = "Peanuts (bahasa indonesia"
+    Case 4
+        lbl_hint1.Caption = "Tidak berurutan"
+        lbl_hint2.Caption = ""
+    Case 5
+        lbl_hint1.Caption = "Tidak berurutan"
+        lbl_hint2.Caption = ""
+    Case 6
+        lbl_hint1.Caption = "Tidak berurutan"
+        lbl_hint2.Caption = "Air susu ibu (singkatan)"
+    Case 7
+        lbl_hint1.Caption = "Tidak berurutan"
+        lbl_hint2.Caption = ""
+    Case 8
+        lbl_hint1.Caption = "Hasil dari reporter makanan"
+        lbl_hint2.Caption = ""
+    Case 9
+        lbl_hint1.Caption = "Hasil dari reporter makanan"
+        lbl_hint2.Caption = ""
+    Case 10
+        lbl_hint1.Caption = "Hasil dari reporter makanan"
+        lbl_hint2.Caption = "Terbakar habis hingga menjadi ..."
+    Case 11
+        lbl_hint1.Caption = "Hasil dari reporter makanan"
+        lbl_hint2.Caption = ""
+    Case 12
+        lbl_hint1.Caption = "Hasil dari reporter makanan"
+        lbl_hint2.Caption = "Sebutan lain dari luar angkasa"
+    Case 13
+        lbl_hint1.Caption = "Hasil dari reporter makanan"
+        lbl_hint2.Caption = ""
+    Case 14
+        lbl_hint1.Caption = "Dikebumikan"
+        lbl_hint2.Caption = "Bagian binatang yang biasa dijadikan tas"
+    Case 15
+        lbl_hint1.Caption = "Dikebumikan"
+        lbl_hint2.Caption = ""
+    Case 16
+        lbl_hint1.Caption = "Dikebumikan"
+        lbl_hint2.Caption = "Lawan kata dari (tidak bisa)"
+    Case 17
+        lbl_hint1.Caption = "Dikebumikan"
+        lbl_hint2.Caption = ""
+    Case 18
+        lbl_hint1.Caption = "Dikebumikan"
+        lbl_hint2.Caption = ""
+    Case 19
+        lbl_hint1.Caption = ""
+        lbl_hint2.Caption = "Makanan pokok orang indonesia"
+    Case 20
+        lbl_hint1.Caption = ""
+        lbl_hint2.Caption = "Peanuts (bahasa indonesia)"
+    Case 21
+        lbl_hint1.Caption = ""
+        lbl_hint2.Caption = "Air susu ibu (singkatan)"
+    Case 22
+        lbl_hint1.Caption = ""
+        lbl_hint2.Caption = "Terbakar habis hingga menjadi ..."
+    Case 23
+        lbl_hint1.Caption = ""
+        lbl_hint2.Caption = "Sebutan lain dari luar angkasa"
+    Case 24
+        lbl_hint1.Caption = ""
+        lbl_hint2.Caption = "Bagian binatang yang biasa dijadikan tas"
+    Case 25
+        lbl_hint1.Caption = ""
+        lbl_hint2.Caption = "Lawan kata dari (tidak bisa)"
+    Case 26
+        lbl_hint1.Caption = ""
+        lbl_hint2.Caption = "Makanan pokok orang indonesia"
+    Case 27
+        lbl_hint1.Caption = ""
+        lbl_hint2.Caption = "Peanuts (bahasa indonesia)"
+    Case 28
+        lbl_hint1.Caption = "Terbakar"
+        lbl_hint2.Caption = "Tumbuhan menyerap air melalui"
+    Case 29
+        lbl_hint1.Caption = "Terbakar"
+        lbl_hint2.Caption = ""
+    Case 30
+        lbl_hint1.Caption = "Terbakar"
+        lbl_hint2.Caption = "Air susu ibu (singkatan)"
+    Case 31
+        lbl_hint1.Caption = "Hidung dapat mengetahui ..."
+        lbl_hint2.Caption = "Hewan yang seperti cacing tapi tinggal di air dan kadang dapat mengeluarkan listrik"
+    Case 32
+        lbl_hint1.Caption = "Hidung dapat mengetahui ..."
+        lbl_hint2.Caption = ""
+    Case 33
+        lbl_hint1.Caption = "Hidung dapat mengetahui"
+        lbl_hint2.Caption = "Terbakar habis hingga menjadi ..."
+    Case 34
+        lbl_hint1.Caption = ""
+        lbl_hint2.Caption = "Sebutan lain dari luar angkasa"
+    Case 35
+        lbl_hint1.Caption = ""
+        lbl_hint2.Caption = "Bagian binatang yang biasa dijadikan tas"
+    Case 36
+        lbl_hint1.Caption = ""
+        lbl_hint2.Caption = "Lawan kata dari (tidak bisa)"
+    Case 37
+        lbl_hint1.Caption = ""
+        lbl_hint2.Caption = "Bulan yang tidak penuh disebut sebagai bulan ..."
+    Case 38
+        lbl_hint1.Caption = "Surat izin masuk ke suatu negara"
+        lbl_hint2.Caption = ""
+    Case 39
+        lbl_hint1.Caption = "Surat izin masuk ke suatu negara"
+        lbl_hint2.Caption = "Makanan pokok orang indonesia"
+    Case 40
+        lbl_hint1.Caption = "Surat izin masuk ke suatu negara"
+        lbl_hint2.Caption = ""
+    Case 41
+        lbl_hint1.Caption = "Surat izin masuk ke suatu negara"
+        lbl_hint2.Caption = "Peanuts (bahasa indonesia)"
+    Case 42
+        lbl_hint1.Caption = ""
+        lbl_hint2.Caption = "Tumbuhan menyerap air melalui"
+    Case 43
+        lbl_hint1.Caption = ""
+        lbl_hint2.Caption = "Hewan yang seperti cacing tapi tinggal di air dan kadang dapat mengeluarkan listrik"
+    Case 44
+        lbl_hint1.Caption = ""
+        lbl_hint2.Caption = "Sebutan lain dari luar angkasa"
+    Case 45
+        lbl_hint1.Caption = ""
+        lbl_hint2.Caption = "Bagian binatang yang biasa dijadikan tas"
+    Case 46
+        lbl_hint1.Caption = "Sebutan orang tua dalam bahasa sunda"
+        lbl_hint2.Caption = "Lawan kata dari (tidak bisa)"
+    Case 47
+        lbl_hint1.Caption = "Sebutan orang tua dalam bahasa sunda"
+        lbl_hint2.Caption = ""
+    Case 48
+        lbl_hint1.Caption = "Sebutan orang tua dalam bahasa sunda"
+        lbl_hint2.Caption = "Bulan yang tidak penuh disebut sebagai bulan ..."
+    Case 49
+        lbl_hint1.Caption = "Sebutan orang tua dalam bahasa sunda"
+        lbl_hint2.Caption = ""
+    Case 50
+        lbl_hint1.Caption = ""
+        lbl_hint2.Caption = "Peanuts (bahasa indonesia)"
+    Case 51
+        lbl_hint1.Caption = ""
+        lbl_hint2.Caption = "Tumbuhan menyerap air melalui"
+    Case 52
+        lbl_hint1.Caption = ""
+        lbl_hint2.Caption = "Hewan yang seperti cacing tapi tinggal di air dan kadang dapat mengeluarkan listrik"
+    Case 53
+        lbl_hint1.Caption = "Kesal"
+        lbl_hint2.Caption = "Ketika suami istri bertengkar, mereka akan ... ranjang"
+    Case 55
+        lbl_hint1.Caption = "Kesal"
+        lbl_hint2.Caption = ""
+    Case 55
+        lbl_hint1.Caption = "Kesal"
+        lbl_hint2.Caption = "Sebutan lain dari luar angkasa"
+    Case 56
+        lbl_hint1.Caption = "Kesal"
+        lbl_hint2.Caption = ""
+    Case 57
+        lbl_hint1.Caption = "Kesal"
+        lbl_hint2.Caption = ""
+    Case 58
+        lbl_hint1.Caption = ""
+        lbl_hint2.Caption = "Bagian binatang yang biasa di jadikan tas"
+    Case 59
+        lbl_hint1.Caption = ""
+        lbl_hint2.Caption = "Bulan yang tidak penuh disebut sebagai bulan ..."
+    Case 60
+        lbl_hint1.Caption = "Pasangan dari sendok"
+        lbl_hint2.Caption = "Peanuts (bahasa indonesia)"
+    Case 61
+        lbl_hint1.Caption = "Pasangan dari sendok"
+        lbl_hint2.Caption = "Tempat untuk membuang abu rokok"
+    Case 62
+        lbl_hint1.Caption = "Pasangan dari sendok"
+        lbl_hint2.Caption = "Tumbuhan menyerap air melalui"
+    Case 63
+        lbl_hint1.Caption = "Pasangan dari sendok"
+        lbl_hint2.Caption = ""
+    Case 64
+        lbl_hint1.Caption = "Pasangan dari sendok"
+        lbl_hint2.Caption = "Hewan melata dan berbisa"
+    Case 65
+        lbl_hint1.Caption = ""
+        lbl_hint2.Caption = "Hewan seperti cacing yang di air dan kadang dapat mengeluarkan listrik"
+    Case 66
+        lbl_hint1.Caption = ""
+        lbl_hint2.Caption = "Ketika suami istri bertengkar, mereka akan ... ranjang"
+    Case 67
+        lbl_hint1.Caption = ""
+        lbl_hint2.Caption = "Sebutan lain dari luar angkasa"
+    Case 68
+        lbl_hint1.Caption = ""
+        lbl_hint2.Caption = "Bulan yang tidak penuh disebut sebagai bulan ..."
+    Case 69
+        lbl_hint1.Caption = ""
+        lbl_hint2.Caption = "Tempat untuk membuang abu rokok"
+    Case 70
+        lbl_hint1.Caption = "Tempat yang banyak air asin"
+        lbl_hint2.Caption = "Hewan melata dan berbisa"
+    Case 71
+        lbl_hint1.Caption = "Tempat yang banyak air asin"
+        lbl_hint2.Caption = ""
+    Case 72
+        lbl_hint1.Caption = "Tempat yang banyak air asin"
+        lbl_hint2.Caption = ""
+    Case 73
+        lbl_hint1.Caption = "Tempat yang banyak air asin"
+        lbl_hint2.Caption = "Hewan seperti cacing yang di air dan kadang dapat mengeluarkan listrik"
+    Case 74
+        lbl_hint1.Caption = "Pohon yang terkenal di jepang"
+        lbl_hint2.Caption = "Ketika suami istri bertengkar, mereka akan ... ranjang"
+    Case 75
+        lbl_hint1.Caption = "Pohon yang terkenal di jepang"
+        lbl_hint2.Caption = ""
+    Case 76
+        lbl_hint1.Caption = "Pohon yang terkenal di jepang"
+        lbl_hint2.Caption = "Sebutan lain dari luar angkasa"
+    Case 77
+        lbl_hint1.Caption = "Pohon yang terkenal di jepang"
+        lbl_hint2.Caption = ""
+    Case 78
+        lbl_hint1.Caption = "Pohon yang terkenal di jepang"
+        lbl_hint2.Caption = ""
+    Case 79
+        lbl_hint1.Caption = "Pohon yang terkenal di jepang"
+        lbl_hint2.Caption = "Berbagi tanpa mengistimewakan seseorang"
+    Case 80
+        lbl_hint1.Caption = "Duduk (inggris)"
+        lbl_hint2.Caption = "Hewan yang sering diperah"
+    Case 81
+        lbl_hint1.Caption = "Duduk (inggrus)"
+        lbl_hint2.Caption = ""
+    Case 82
+        lbl_hint1.Caption = "Duduk (inggris)"
+        lbl_hint2.Caption = "Bulan yang tidak penuh disebut sebagai bulan ..."
+    Case 83
+        lbl_hint1.Caption = ""
+        lbl_hint2.Caption = "Tempat untuk membuang abu rokok"
+    Case 84
+        lbl_hint1.Caption = "Hewan melata dan berbisa"
+        lbl_hint2.Caption = ""
+    Case 85
+        lbl_hint1.Caption = ""
+        lbl_hint2.Caption = "Ketika suami istri bertengkar, mereka akan ... ranjang"
+    Case 86
+        lbl_hint1.Caption = ""
+        lbl_hint2.Caption = "Sebutan lain dari luar angkasa"
+    Case 87
+        lbl_hint1.Caption = ""
+        lbl_hint2.Caption = "Berbagi tanpa mengistimewakan seseorang"
+    Case 88
+        lbl_hint1.Caption = ""
+        lbl_hint2.Caption = "Hewan yang sering di perah"
+    Case 89
+        lbl_hint1.Caption = ""
+        lbl_hint2.Caption = "Tempat untuk membuang abu rokok"
+    Case 90
+        lbl_hint1.Caption = "Bahan bakar untuk membuat sate"
+        lbl_hint2.Caption = ""
+    Case 91
+        lbl_hint1.Caption = "Bahan bakar untuk sate"
+        lbl_hint2.Caption = "Hewan melata dan berbisa"
+    Case 92
+        lbl_hint1.Caption = "Bahan bakar untuk sate"
+        lbl_hint2.Caption = ""
+    Case 93
+        lbl_hint1.Caption = "Bahan bakar untuk sate"
+        lbl_hint2.Caption = ""
+    Case 94
+        lbl_hint1.Caption = ""
+        lbl_hint2.Caption = "Ketika suami istri bertengkar, mereka akan ... ranjang"
+    Case 95
+        lbl_hint1.Caption = ""
+        lbl_hint2.Caption = "Sebutan lain untuk luar angkasa"
+    Case 96
+        lbl_hint1.Caption = ""
+        lbl_hint2.Caption = "Berbagi tanpa mengistimewakan seseorang"
+    Case 97
+        lbl_hint1.Caption = ""
+        lbl_hint2.Caption = "Hewan yang sering di perah"
+    Case 98
+        lbl_hint1.Caption = ""
+        lbl_hint2.Caption = "Tempat untuk membuang abu rokok"
+    Case 99
+        lbl_hint1.Caption = "Lebih cepat daripada berjalan"
+        lbl_hint2.Caption = "Berbagi tanpa mengistemawakan seseorang"
+    Case 100
+        lbl_hint1.Caption = "Lebih cepat daripada berjalan"
+        lbl_hint2.Caption = ""
+    Case 101
+        lbl_hint1.Caption = "Lebih cepat daripada berjalan"
+        lbl_hint2.Caption = ""
+    Case 102
+        lbl_hint1.Caption = "Lebih cepat daripada berjalan"
+        lbl_hint2.Caption = "Hewan yang sering di perah"
 End Select
 End If
 
