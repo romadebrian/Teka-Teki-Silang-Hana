@@ -2057,7 +2057,26 @@ Dim Val_Hint_Stage2 As Integer
 Dim Hint_Mode As Boolean
 
 Private Sub btn_check_Click()
-Cek_Jawaban_Stage2
+
+For i = 0 To 2 '101
+
+Jawaban_Stage2
+
+If txt_jwb(i).Text = "" Then
+    MsgBox "Jawaban anda kosong"
+    txt_jwb(i).SetFocus
+    i = 2
+    
+ElseIf Not txt_jwb(i).Text = Jawabannya Then
+    MsgBox "Ada jawaban yang salah"
+    txt_jwb(i).SetFocus
+    i = 2
+    
+    lbl_val_hint.Caption = Jawabannya
+End If
+
+Next
+
 End Sub
 
 Private Sub btn_hint_Click()
