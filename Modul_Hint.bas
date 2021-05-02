@@ -1,5 +1,8 @@
 Attribute VB_Name = "Modul_hint"
 Dim val_hint As Integer
+Public Index_Textbox_Jawaban As Integer
+Dim Benar_Salah As Boolean
+
 
 Sub Hint_Stage1()
 val_hint = frm_Stage1.lbl_val_hint.Caption
@@ -350,22 +353,38 @@ End If
 End Sub
 
 Sub Hint_Stage2()
+Benar_Salah = True
 With frm_Stage2
 
-Select Case Index
-    Case 0
-        If .txt_jwb(0) = "" Then
-            .txt_jwb(0) = "A"
-            .txt_jwb(0).SetFocus
-            
-        ElseIf Not frm_Stage1.txt_1.Text = "A" Then
-            .txt_jwb(0) = "A"
-            .txt_jwb(0).SetFocus
-        End If
-        
-    Case 1
-        MsgBox "text2"
-End Select
+'For i = 0 To 102 '102
+
+i = Index_Textbox_Jawaban
+
+Jawaban_Stage2
+
+If .txt_jwb(i).Text = "" Then
+    .txt_jwb(i).Text = Jawabannya
+    .txt_jwb(i).SetFocus
+    i = 102
+    Benar_Salah = False
+    
+ElseIf Not .txt_jwb(i).Text = Jawabannya Then
+    .txt_jwb(i).Text = Jawabannya
+    .txt_jwb(i).SetFocus
+    i = 102
+    Benar_Salah = False
+    
+End If
+
+'Next
+
+If Benar_Salah = True Then
+    MsgBox "Jawaban anda sudah benar"
+    poin = .lbl_val_hint.Caption
+    .lbl_val_hint.Caption = poin + 1
+End If
+
+frm_Stage2.BackColor = &H8000000D
 
 End With
 End Sub

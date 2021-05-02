@@ -1,4 +1,4 @@
-Attribute VB_Name = "Jawaban"
+Attribute VB_Name = "Modul_Jawaban"
 Public Jawabannya As String
 Public i As Integer
 
@@ -189,9 +189,9 @@ Select Case i
     Case 91
         Jawabannya = "R"
     Case 92
-        Jawabannya = "N"
+        Jawabannya = "A"
     Case 93
-        Jawabannya = "G"
+        Jawabannya = "B"
     Case 94
         Jawabannya = "H"
     Case 95

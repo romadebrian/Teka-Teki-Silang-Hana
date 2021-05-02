@@ -907,7 +907,7 @@ Hint_Stage1
 End Sub
 
 Private Sub Form_Load()
-WMP.settings.volume = 100
+WMP.settings.volume = 50
 WMP.URL = (App.Path & "\Resource\Wistful Harp - Andrew Huang.mp3")
 WMP.settings.setMode "loop", True
 End Sub

@@ -2057,33 +2057,41 @@ Dim Val_Hint_Stage2 As Integer
 Dim Hint_Mode As Boolean
 
 Private Sub btn_check_Click()
+Dim stat_clear As Boolean
+stat_clear = True
 
-For i = 0 To 2 '101
+For i = 0 To 102 '102
 
 Jawaban_Stage2
 
 If txt_jwb(i).Text = "" Then
     MsgBox "Jawaban anda kosong"
     txt_jwb(i).SetFocus
-    i = 2
+    i = 102
+    stat_clear = False
     
 ElseIf Not txt_jwb(i).Text = Jawabannya Then
     MsgBox "Ada jawaban yang salah"
     txt_jwb(i).SetFocus
-    i = 2
+    i = 102
+    stat_clear = False
     
-    lbl_val_hint.Caption = Jawabannya
 End If
 
 Next
+
+If stat_clear = True Then
+    MsgBox "Selamat anda berhasil menyelesaikan puzle ini"
+    MsgBox "Stage selanjutnya masih dalam tahap pembuatan"
+End If
+
 
 End Sub
 
 Private Sub btn_hint_Click()
 If Not lbl_val_hint.Caption = 0 Then
     Val_Hint_Stage2 = lbl_val_hint.Caption
-    Val_Hint_Stage2 = Val_Hint_Stage2 - 1
-    lbl_val_hint.Caption = Val_Hint_Stage2
+    lbl_val_hint.Caption = Val_Hint_Stage2 - 1
     Hint_Mode = True
     frm_Stage2.BackColor = &H0&
     MsgBox "Pilih kolom yang mau diberikan hint"
@@ -2098,7 +2106,7 @@ Hint_Mode = False
 
 frm_Stage2.BackColor = &H8000000D
 
-WMP.settings.volume = 100
+WMP.settings.volume = 50
 WMP.URL = (App.Path & "\Resource\Wistful Harp - Andrew Huang.mp3")
 WMP.settings.setMode "loop", True
 End Sub
@@ -2111,6 +2119,7 @@ End Sub
 Private Sub txt_jwb_GotFocus(Index As Integer)
 
 If Hint_Mode = True Then
+    Index_Textbox_Jawaban = Index
     Hint_Stage2
 Else
 
@@ -2386,16 +2395,16 @@ Select Case Index
         lbl_hint1.Caption = ""
         lbl_hint2.Caption = "Tempat untuk membuang abu rokok"
     Case 90
-        lbl_hint1.Caption = "Bahan bakar untuk membuat sate"
+        lbl_hint1.Caption = "Negara yang di tuju orang islam ketika ingin pergi haji"
         lbl_hint2.Caption = ""
     Case 91
-        lbl_hint1.Caption = "Bahan bakar untuk sate"
+        lbl_hint1.Caption = "Negara yang di tuju orang islam ketika ingin pergi haji"
         lbl_hint2.Caption = "Hewan melata dan berbisa"
     Case 92
-        lbl_hint1.Caption = "Bahan bakar untuk sate"
+        lbl_hint1.Caption = "Negara yang di tuju orang islam ketika ingin pergi haji"
         lbl_hint2.Caption = ""
     Case 93
-        lbl_hint1.Caption = "Bahan bakar untuk sate"
+        lbl_hint1.Caption = "Negara yang di tuju orang islam ketika ingin pergi haji"
         lbl_hint2.Caption = ""
     Case 94
         lbl_hint1.Caption = ""
