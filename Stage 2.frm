@@ -1916,6 +1916,26 @@ Begin VB.Form frm_Stage2
       Top             =   6960
       Width           =   735
    End
+   Begin VB.Label Label1 
+      Alignment       =   2  'Center
+      BackStyle       =   0  'Transparent
+      Caption         =   "HINT MODE"
+      BeginProperty Font 
+         Name            =   "Candara"
+         Size            =   20.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H8000000D&
+      Height          =   495
+      Left            =   6120
+      TabIndex        =   110
+      Top             =   360
+      Width           =   2175
+   End
    Begin WMPLibCtl.WindowsMediaPlayer WMP 
       Height          =   855
       Left            =   2400
@@ -2053,15 +2073,29 @@ Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
-Dim Val_Hint_Stage2 As Integer
+Dim Val_Hint_Stage2, Index_Textbox_Jawaban As Integer
 Dim Hint_Mode As Boolean
+
+Private Sub Form_Load()
+
+Hint_Mode = False
+
+frm_Stage2.BackColor = &H8000000D
+
+WMP.settings.volume = 50
+WMP.URL = (App.Path & "\Resource\Wistful Harp - Andrew Huang.mp3")
+WMP.settings.setMode "loop", True
+End Sub
+
+Private Sub Form_Unload(Cancel As Integer)
+End
+End Sub
 
 Private Sub btn_check_Click()
 Dim stat_clear As Boolean
 stat_clear = True
 
-For i = 0 To 102 '102
-
+For i = 0 To 102
 Jawaban_Stage2
 
 If txt_jwb(i).Text = "" Then
@@ -2092,7 +2126,9 @@ Private Sub btn_hint_Click()
 If Not lbl_val_hint.Caption = 0 Then
     Val_Hint_Stage2 = lbl_val_hint.Caption
     lbl_val_hint.Caption = Val_Hint_Stage2 - 1
+    
     Hint_Mode = True
+    
     frm_Stage2.BackColor = &H0&
     MsgBox "Pilih kolom yang mau diberikan hint"
 Else
@@ -2100,27 +2136,36 @@ Else
 End If
 End Sub
 
-Private Sub Form_Load()
+Sub Hint_Stage()
+i = Index_Textbox_Jawaban
 
-Hint_Mode = False
+Jawaban_Stage2
+
+If txt_jwb(i).Text = "" Then
+    txt_jwb(i).Text = Jawabannya
+    txt_jwb(i).SetFocus
+    
+    Hint_Mode = False
+    
+ElseIf Not txt_jwb(i).Text = Jawabannya Then
+    txt_jwb(i).Text = Jawabannya
+    txt_jwb(i).SetFocus
+    
+    Hint_Mode = False
+    
+Else
+    MsgBox "Jawaban anda sudah benar"
+End If
 
 frm_Stage2.BackColor = &H8000000D
 
-WMP.settings.volume = 50
-WMP.URL = (App.Path & "\Resource\Wistful Harp - Andrew Huang.mp3")
-WMP.settings.setMode "loop", True
 End Sub
-
-Private Sub Form_Unload(Cancel As Integer)
-End
-End Sub
-
 
 Private Sub txt_jwb_GotFocus(Index As Integer)
 
 If Hint_Mode = True Then
     Index_Textbox_Jawaban = Index
-    Hint_Stage2
+    Hint_Stage
 Else
 
 Select Case Index

@@ -796,7 +796,7 @@ Begin VB.Form frm_Stage1
       Appearance      =   0  'Flat
       BackColor       =   &H0080FF80&
       BackStyle       =   0  'Transparent
-      Caption         =   "50"
+      Caption         =   "10"
       BeginProperty Font 
          Name            =   "Consolas"
          Size            =   48
@@ -910,10 +910,6 @@ Private Sub Form_Load()
 WMP.settings.volume = 50
 WMP.URL = (App.Path & "\Resource\Wistful Harp - Andrew Huang.mp3")
 WMP.settings.setMode "loop", True
-End Sub
-
-Private Sub Form_Unload(Cancel As Integer)
-End
 End Sub
 
 Private Sub txt_1_GotFocus()
@@ -1532,5 +1528,3 @@ Private Sub txt_41_LostFocus()
 lbl_hint1.Caption = ""
 lbl_hint2.Caption = ""
 End Sub
-
-

@@ -341,10 +341,9 @@ ElseIf Not frm_Stage1.txt_41.Text = "N" Then
 Else
     'sndPlaySound App.Path & "\hit.wav", 1 Or 2
     MsgBox "Selamat anda berhasil menyelesaikan puzle ini"
-    frm_Stage1.WMP.Controls.stop
+    'frm_Stage1.WMP.Controls.stop
     frm_Stage2.Show
-    frm_Stage1.Hide
-    
+    Unload frm_Stage1
 End If
 
 End Sub

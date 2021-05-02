@@ -8,8 +8,7 @@ Sub Hint_Stage1()
 val_hint = frm_Stage1.lbl_val_hint.Caption
 
 If val_hint >= 0 Then
-    val_hint = val_hint - 1
-    frm_Stage1.lbl_val_hint.Caption = val_hint
+    frm_Stage1.lbl_val_hint.Caption = val_hint - 1
 
 If frm_Stage1.txt_1.Text = "" Then
     frm_Stage1.txt_1.Text = "I"
@@ -341,51 +340,15 @@ ElseIf Not frm_Stage1.txt_41.Text = "N" Then
     
 Else
     MsgBox "Selamat anda berhasil menyelesaikan puzle ini"
-    frm_Stage1.WMP.Controls.stop
+    'frm_Stage1.WMP.Controls.stop
     frm_Stage2.Show
-    frm_Stage1.Hide
+    
+    Unload frm_Stage1
 End If
 
 Else
 MsgBox "Hint anda sudah habis"
 End If
 
-End Sub
-
-Sub Hint_Stage2()
-Benar_Salah = True
-With frm_Stage2
-
-'For i = 0 To 102 '102
-
-i = Index_Textbox_Jawaban
-
-Jawaban_Stage2
-
-If .txt_jwb(i).Text = "" Then
-    .txt_jwb(i).Text = Jawabannya
-    .txt_jwb(i).SetFocus
-    i = 102
-    Benar_Salah = False
-    
-ElseIf Not .txt_jwb(i).Text = Jawabannya Then
-    .txt_jwb(i).Text = Jawabannya
-    .txt_jwb(i).SetFocus
-    i = 102
-    Benar_Salah = False
-    
-End If
-
-'Next
-
-If Benar_Salah = True Then
-    MsgBox "Jawaban anda sudah benar"
-    poin = .lbl_val_hint.Caption
-    .lbl_val_hint.Caption = poin + 1
-End If
-
-frm_Stage2.BackColor = &H8000000D
-
-End With
 End Sub
 

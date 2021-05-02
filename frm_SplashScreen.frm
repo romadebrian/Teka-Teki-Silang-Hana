@@ -60,6 +60,6 @@ Select Case i
         Image1.Visible = False
     Case Else
     frm_Stage1.Show
-    frm_SplashScreen.Hide
+    Unload frm_SplashScreen
 End Select
 End Sub
