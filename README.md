@@ -9,7 +9,7 @@ Sreenshot
 
 <div>
   <center>
-    <img src=https://github.com/romadebrian/Teka-Teki-Silang-Hana/blob/main/Screenshot/Splash%20Screen.pngg width=400 height=700 />
-    <img src=https://github.com/romadebrian/Teka-Teki-Silang-Hana/blob/main/Screenshot/Screenshot%201.png width=400 height=700 />
-    <img src=https://github.com/romadebrian/Teka-Teki-Silang-Hana/blob/main/Screenshot/Screenshot%202.png width=400 height=700 />
+    <img src=https://github.com/romadebrian/Teka-Teki-Silang-Hana/blob/main/Screenshot/Splash%20Screen.png width=700 height=400 />
+    <img src=https://github.com/romadebrian/Teka-Teki-Silang-Hana/blob/main/Screenshot/Screenshot%201.png width=700 height=400 />
+    <img src=https://github.com/romadebrian/Teka-Teki-Silang-Hana/blob/main/Screenshot/Screenshot%202.png width=700 height=400 />
 </div>
